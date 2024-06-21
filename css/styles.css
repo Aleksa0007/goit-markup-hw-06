@@ -306,7 +306,6 @@ h1, h3, p {
     padding-top: 40px;
 }
 .modal-nav-link {
-    
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -356,7 +355,6 @@ h1, h3, p {
 .modal-mobile-social-list {
     display: flex;
     gap: 40px;
-    
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
@@ -413,7 +411,6 @@ h1, h3, p {
     top: 16px;
     right: 16px;
     padding: 0;
-    
 }
 
 .container-goals {
@@ -562,23 +559,28 @@ h1, h3, p {
     border-top: none;
 }
 
-.main {
-    
-}
-
 .board {
-    min-width: 320px;
-    height: 432px;
     background-size: cover;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-    url("../images/background-section-one.jpg");
+    url("../images/background-section-one-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
-   
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+@media (min-resolution: 192dpi) {
+    .board {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/background-section-one-mob@2x.jpg");
+    }
 }
 
 .board-container {
@@ -586,8 +588,9 @@ h1, h3, p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 72px;
 }
-    .title {
+.title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px; 
@@ -597,8 +600,6 @@ h1, h3, p {
     color: #fff;
     text-align: center;
     width: 216px;
-    padding-top: 72px;
-    padding-bottom: 72px;
 }
 
 .button {
@@ -702,7 +703,6 @@ img {
 .footer {
     background: #2e2f42;
     padding-top: 96px;
-    /* padding-left: 108px; */
 }
 .footer-parent-container {
     display: flex;
@@ -714,13 +714,10 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 288px;
 }
 
 .footer-second-container {
-    width: 208px;
-    height: 80px;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .footer-social-links {
@@ -784,16 +781,11 @@ img {
     background-color: #31d0aa;
 }
 
-/* .subscribe-container{
-    width: 288px;
-    height: 136px;
-} */
 .footer-third-container {
     display: flex;
     flex-direction: column;
-    align-items:center ;
-    margin-left: 16px;
-    margin-right: 16px;
+    align-items: center;
+    margin: 96px 16px;
 }
 
 .subscribe-input {
@@ -830,8 +822,6 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
-.footer-label {}
 
 .style-subscribe-button {
     background: #4d5ae5;
@@ -944,6 +934,7 @@ img {
     }
 
     .board {
+        padding-top: 112px;
         padding-bottom: 112px;
     }
     .container {
@@ -954,8 +945,6 @@ img {
      .title {
         font-size: 56px;
         width: 496px;
-        padding-top: 112px;
-        padding-bottom: 26px;
      }
      .pad-version {
         text-align: left;
@@ -984,7 +973,6 @@ img {
         width: 356px;
     }
      .footer {
-        padding-top: 0;
         padding-left: 108px;
         padding-bottom: 96px;
     }
@@ -993,7 +981,6 @@ img {
         flex-direction:row;
         flex-wrap: wrap;
         align-items: baseline;
-        row-gap: 72px;
     }
     .footer-first-container {
         display: block;
@@ -1001,6 +988,9 @@ img {
         margin-right: 24px;
     }
    
+    .footer-second-container {
+        margin-top: 0;
+    }
     .social-title {
         text-align: left;
     }
@@ -1008,7 +998,7 @@ img {
     .footer-third-container {
         align-items: flex-start;
         margin-left: 0;
-
+        margin-bottom: 0;
     }
     .footer-small-container {
         display: flex;
@@ -1072,14 +1062,34 @@ img {
     }
 
     .board {
-        min-width: 1157px;
-        height: 600px;
+        background-size: cover;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/background-section-one.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .board {
+            background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/background-section-one@2x.jpg");
+        }
+    }
+
+    .board-container {
+        gap: 36px;
     }
     .title {
         font-size: 56px;
         width: 496px;
-        padding-top: 188px;
-        padding-bottom: 48px;
     }
     .list-container {
         display: flex;
