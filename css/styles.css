@@ -966,6 +966,14 @@ img {
         row-gap: 64px;
      }
     
+     .list-container-portfolio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+    }
      .list-our-portfolio {
         width: 356px;
     }
@@ -982,10 +990,11 @@ img {
     }
     .footer-first-container {
         display: block;
-        max-width: 264px;
         margin-right: 24px;
     }
-   
+    .footer-text {
+        max-width: 264px;
+    }
     .footer-second-container {
         margin-top: 0;
     }
